@@ -52,5 +52,11 @@ header{
         & ion-icon:nth-child(2){
             display: none;
         }
+        &.active ion-icon:nth-child(2){
+            display: block;
+        }
+        &.active ion-icon:nth-child(1){
+            display: none;
+        }
     }
 }
