@@ -10,6 +10,7 @@
 :root {
   --black: #333;
   --white: #fff;
+  --ease: 0.35s ease-in-out;
 }
 
 header {
@@ -133,7 +134,7 @@ header .btns.active ion-icon:nth-child(1) {
 .navigation {
   position: absolute;
   top: 0;
-  left: 0;
+  left: -100%;
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -151,6 +152,8 @@ header .btns.active ion-icon:nth-child(1) {
           align-items: center;
   background: var(--white);
   z-index: 4;
+  -webkit-transition: var(--ease);
+  transition: var(--ease);
 }
 
 .navigation li {
@@ -167,10 +170,16 @@ header .btns.active ion-icon:nth-child(1) {
   color: var(--black);
   padding: 5px 20px;
   border-radius: 40px;
+  -webkit-transition: var(--ease);
+  transition: var(--ease);
 }
 
 .navigation li :hover {
   color: var(--white);
   background: var(--black);
+}
+
+.navigation.active {
+  left: 0;
 }
 /*# sourceMappingURL=style.css.map */
