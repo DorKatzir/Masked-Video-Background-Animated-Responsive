@@ -88,5 +88,12 @@ header{
         user-select: none;
         mix-blend-mode: screen;
     }
+    h2{
+        position: relative;
+        z-index: 3;
+        font-size: 16vw;
+        color: #fff;
+        text-shadow: 0 20px 30px rgba(0,0,0,.2);
+    }
 }
     
