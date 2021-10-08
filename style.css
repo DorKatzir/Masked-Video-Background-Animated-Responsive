@@ -131,6 +131,40 @@ header .btns.active ion-icon:nth-child(1) {
   text-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
 }
 
+.main .copyrightText {
+  position: absolute;
+  left: 100px;
+  bottom: 40px;
+  z-index: 4;
+  font-weight: 500;
+  font-size: 1em;
+  color: var(--black);
+}
+
+.main .sci {
+  position: absolute;
+  right: 100px;
+  bottom: 40px;
+  z-index: 4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main .sci li {
+  list-style-type: none;
+}
+
+.main .sci li a {
+  text-decoration: none;
+  color: var(--black);
+  font-size: 1.75em;
+}
+
 .navigation {
   position: absolute;
   top: 0;

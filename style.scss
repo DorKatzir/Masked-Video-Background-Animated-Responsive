@@ -96,6 +96,32 @@ header{
         color: var(--white);
         text-shadow: 0 20px 30px rgba(0,0,0,.2);
     }
+    .copyrightText{
+        position: absolute;
+        left: 100px;
+        bottom: 40px;
+        z-index: 4;
+        font-weight: 500;
+        font-size: 1em;
+        color: var(--black);
+    }
+    
+    .sci{
+        position: absolute;
+        right: 100px;
+        bottom: 40px;
+        z-index: 4;
+        display: flex;
+        flex-direction: column;
+        li{
+            list-style-type: none;
+            a{
+                text-decoration: none;
+                color: var(--black);
+                font-size: 1.75em;
+            }
+        }
+    }
  }
 
  .navigation{
