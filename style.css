@@ -13,6 +13,11 @@
   --ease: 0.35s ease-in-out;
 }
 
+.dark {
+  --black: #fff;
+  --white: rgb(16, 16, 16);
+}
+
 header {
   position: absolute;
   display: -webkit-box;
@@ -27,6 +32,7 @@ header {
   width: 100%;
   padding: 40px 100px;
   z-index: 99;
+  color: var(--black);
 }
 
 header .logo {
@@ -127,7 +133,7 @@ header .btns.active ion-icon:nth-child(1) {
   position: relative;
   z-index: 3;
   font-size: 16vw;
-  color: var(--white);
+  color: #fff;
   text-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
 }
 
@@ -215,5 +221,11 @@ header .btns.active ion-icon:nth-child(1) {
 
 .navigation.active {
   left: 0;
+}
+
+.dark .mask {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+  mix-blend-mode: multiply;
 }
 /*# sourceMappingURL=style.css.map */

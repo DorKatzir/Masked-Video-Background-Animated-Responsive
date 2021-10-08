@@ -13,6 +13,11 @@
     --ease: 0.35s ease-in-out;
 }
 
+.dark{
+    --black: #fff;
+    --white: rgb(16, 16, 16);
+}
+
 header{
     position: absolute;
     display: flex;
@@ -21,6 +26,8 @@ header{
     width: 100%;
     padding: 40px 100px;
     z-index: 99;
+    color: var(--black);
+    
     .logo{
         position: relative;
         display: inline-flex;
@@ -89,11 +96,12 @@ header{
         user-select: none;
         mix-blend-mode: screen;
     }
+    
     h2{
         position: relative;
         z-index: 3;
         font-size: 16vw;
-        color: var(--white);
+        color: #fff;
         text-shadow: 0 20px 30px rgba(0,0,0,.2);
     }
     .copyrightText{
@@ -159,4 +167,8 @@ header{
  .navigation.active{
      left: 0;
  }
-    
+
+ .dark .mask{
+    filter: invert(1);
+    mix-blend-mode: multiply;     
+}
